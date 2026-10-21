@@ -15,18 +15,18 @@ let package = Package(
         .library(
             name: "Witness Observation",
             targets: ["WitnessObservation"]
-        ),
+        )
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-compositions/swift-witnesses.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-witnesses.git", branch: "main")
     ],
     targets: [
         .target(
             name: "WitnessObservation",
             dependencies: [
-                .product(name: "Witnesses", package: "swift-witnesses"),
+                .product(name: "Witnesses", package: "swift-witnesses")
             ]
-        ),
+        )
     ],
     swiftLanguageModes: [.v6]
 )
